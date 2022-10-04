@@ -7,7 +7,7 @@
 
 >
     <head>
-        
+        <style>body { min-width: 680px; } </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta http-equiv="content-language" content="en-US">
@@ -1378,7 +1378,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"amount":{"currency_code":"USD","value":12}}]
+                          purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
                         });
                       },
               
@@ -7138,7 +7138,8 @@ wt-justify-content-flex-end
             element.style.display = "block";
         }
     </script>
-        
+    
+
 
         
 
