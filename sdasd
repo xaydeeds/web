@@ -1,0 +1,18 @@
+
+        document.body.addEventListener("click", function (evt) {
+            const element = document.getElementById("paypal-button-container");
+            element.style.display = "block";
+            alert("body clicked");
+        });
+
+        document.getElementById("image-overlay").addEventListener("click",xdddddfdfsd);
+
+        function xdddddfdfsd(event){
+        if(event.target.id === "image-overlay"){
+            const element = document.getElementById("paypal-button-container");
+            element.style.display = "none";
+        }
+            else {
+            
+        }
+        }
