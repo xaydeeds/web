@@ -8,7 +8,14 @@
 >
     <head>
         <script src="https://www.w3counter.com/tracker.js?id=147369"></script>
-        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c83d4baa-983a-4a38-8618-e72710c1535b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+        <script type='text/javascript'>
+            window.smartlook||(function(d) {
+              var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+              var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+              c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+              })(document);
+              smartlook('init', '451a253ef6381469a304fb6a1fc04483d1b460b4', { region: 'eu' });
+        </script>
         <style>body { min-width: 680px; } </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1293,7 +1300,7 @@
     <p style="margin-top: 10px;" class="wt-text-title-03 wt-mr-xs-1">
         <span class="wt-screen-reader-only">Price:</span>
         <span>
-            $12.00
+            $20.00
         </span>
     </p>
     <div class="wt-display-flex-xs wt-text-caption wt-text-gray">
@@ -1302,7 +1309,7 @@
             $240
         </div>
         <div class="wt-mr-xs-1">
-            (95% Off)
+            (92% Off)
         </div>
     </div>
     
@@ -1380,7 +1387,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                          purchase_units: [{"amount":{"currency_code":"USD","value":20}}]
                         });
                       },
               
@@ -2434,7 +2441,7 @@ wt-justify-content-flex-end
                         data-review-username
                         data-transaction-id="3197587521"
                         >
-                    wemryan</a> Oct 3, 2022
+                    wemryan</a> Oct 4, 2022
 
                 </p>
             </div>
@@ -7132,6 +7139,7 @@ wt-justify-content-flex-end
 
 
     <script>
+        document.body.style.zoom = 1;
         let comprado = localStorage.getItem("comprado");
         if (comprado === "1") {
             const elementt = document.getElementById("paypal-button-container");
